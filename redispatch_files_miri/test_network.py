@@ -11,10 +11,10 @@ plt.style.use("bmh")
 # matplotlib inline
 
 n = pypsa.Network(
-    "../results/elec_s_64_off-_lv1.0__Co2L0-3H-T-H-B-I-A-onwind+p0.25-solar+p3-linemaxext20_2050.nc"
+    "../results/networks/elec_s_10_ec_lv1.0_.nc"
 )
 
-# /results/test-elec/networks/elec_s_6_ec_lcopt_Co2L-3H.nc")
+# /results/test-elec/networks/elec_s_37_ec_lv1.5_.nc")
 n.plot()
 # "results/networks/elec_s_6_ec_lcopt_Co2L-24H.nc"
 

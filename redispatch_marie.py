@@ -12,10 +12,15 @@ solver = "gurobi"
 
 #Load example network 
 #o = pypsa.Network()
-o = pypsa.examples.scigrid_de(from_master=True)
+#o = pypsa.examples.scigrid_de(from_master=True)
+o = pypsa.Network(
+    "results/networks/elec_s_128_ec_lv1.0_Co2L-3H.nc"
+)
+
 o.lines.s_max_pu = 0.7
 #o.lines.loc[["316", "527", "602"], "s_nom"] = 1715
 #o.set_snapshots([o.snapshots[12]])
+o.plot()
 
 n = o.copy()  # for redispatch model
 m = o.copy()  # for market model
